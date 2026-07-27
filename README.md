@@ -48,12 +48,14 @@ python inference.py
 
 ## Performance Note & Benchmarks
 
-This repository is designed for **architectural transparency, modularity, and educational research** rather than raw production speed. 
-
 
 
 
 [![Open In Colab](https://colab.research.google.com/assets/colab-badge.svg)](https://colab.research.google.com/drive/1-p4KWMzp__-RbnRVXaIJd0rCr_Oncoco?usp=sharing)
+
+
+
+This repository is designed for **architectural transparency, modularity, and educational research** rather than raw production speed.
 
 Because this custom Flax `nnx` implementation prioritizes explicit, readable mathematical operations over end-to-end black-box abstractions, it does not currently compete with the official Hugging Face implementation in terms of inference time.
 
