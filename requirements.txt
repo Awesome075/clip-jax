@@ -1,0 +1,5 @@
+jax
+flax
+pillow
+requests
+transformers
