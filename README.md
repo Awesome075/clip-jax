@@ -15,6 +15,7 @@ This repository provides a ground-up implementation of the Vision Transformer (V
 - `modeling.py`: The unified CLIP model connecting the vision and text towers.
 - `text_encoder.py`: Text Transformer implementation with causal masking.
 - `vision_encoder.py`: Vision Transformer implementation for image patch extraction.
+- `download_weights.py`: Script to download model weights from Hugging Face Hub.
 - `conversion.py`: Core utility to map and load HF layer names/shapes into the `nnx` model state.
 - `inference.py`: End-to-end inference script evaluating semantic similarity between an image and candidate text labels.
 - `requirements.txt`: Project dependencies.
@@ -32,11 +33,19 @@ This repository provides a ground-up implementation of the Vision Transformer (V
    
    ```bash
    python -m venv venv
-   venv\Scripts\activate  # On Windows
+   # On Windows
+   venv\Scripts\activate  
+   # On macOS/Linux
+   source venv/bin/activate
    pip install -r requirements.txt
    ```
 
-3. **Download Weights:** Download the `flax_model.msgpack` file for `openai/clip-vit-base-patch32` from the Hugging Face Hub and place it in the root directory. 
+3. **Download Weights:**  
+
+   ```bash
+   python download_weights.py
+ 
+   ``` 
 
 ## Usage
 
