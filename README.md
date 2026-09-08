@@ -25,8 +25,8 @@ This repository provides a ground-up implementation of the Vision Transformer (V
 1. **Clone the repository**:
    
    ```bash
-   git clone https://github.com/yourusername/clip-flax.git
-   cd clip-flax
+   git clone https://github.com/Awesome075/clip-jax.git
+   cd clip-jax
    ```
 
 2. Create a virtual environment and install dependencies:
